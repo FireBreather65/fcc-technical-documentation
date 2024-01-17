@@ -27,6 +27,10 @@ button {
 	cursor: pointer;
 }
 
+code {
+	font-family: "Roboto Mono", monospace;
+}
+
 ::selection {
 	background: var(--primary-yellow, #f4b400);
 	color: var(--primary-black, #17171d);
