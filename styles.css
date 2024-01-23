@@ -56,6 +56,11 @@ a {
 	color: var(--primary-black, #17171d);
 }
 
+.note-block {
+	/* for lines 46 - 50 */
+	font-family: "Inter", sans-serif; /* placeholder, remove once designed */
+}
+
 /*
 color scheme: dark mode (#f4b400 + #17171d for hover/current section)
 */
