@@ -28,7 +28,27 @@ button {
 }
 
 code {
+	/* add more styles! make it look good :) */
 	font-family: "Roboto Mono", monospace;
+}
+
+a {
+	color: var(--primary-yellow, #f4b400);
+}
+
+.code {
+	/* make this look similar to code blocks! */
+	font-family: "Roboto Mono", monospace;
+}
+
+.note {
+	/* style somehow - maybe indent??? */
+	font-family: "Inter", sans-serif; /* placeholder, remove once designed */
+}
+
+.main-section header {
+	/* style headers like h1s! */
+	font-family: "Inter", sans-serif; /* placeholder, remove once designed */
 }
 
 ::selection {
