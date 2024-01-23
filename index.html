@@ -10,14 +10,27 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Git: version control software system; Git Bash: application used to run Git; Github: web-based hosting service for vc using Git -->
     <!-- https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page -->
 		<nav id="navbar">
       <header>Git Bash Documentation</header>
 		</nav>
 		<main id="main-doc">
-      <section class="main-section" id="intro_git_bash" aria-labelledby="gb-intro" role="region">
-        <header id="gb-intro">Introduction to Git Bash</header>
-        <!-- https://firebreather65.hashnode.dev/introduction-to-git-bash -->
+      <section class="main-section" id="intro_to_git" aria-labelledby="git-intro" role="region">
+        <header id="git-intro">Introduction to Git</header>
+        <p>Git is a popular <b>version control system (VCS)</b>. A VCS is a software designed to record changes within one or more files over time. Git also allows users to undo - or even cancel - the made or pending changes in one or more files.</p>
+        <p>You might be wondering, <i>what does this mean? Why does this matter to me?</i></p>
+        <p>Well, by using a VCS (<a href="https://en.wikipedia.org/wiki/List_of_version-control_software" target="_blank">in this case</a>, Git), you can track your projects. Say you were working on a webpage, and you deleted the main contents of the page. You would then lose the main file in your project, as well as hours of work. &#128552;</p>
+        <p>But, if you used Git to track these files - and changes made to said files - you could revert the changes. &#129321;</p>
+        <h3>Installing Git Bash</h3>
+        <p>The first (and most important) thing to do is download Git Bash. This is the application we'll use to run Git.</p>
+        <p>You can set up Git Bash on your <b>local machine (aka laptop or computer)</b> using <a href="https://www.makeuseof.com/install-git-git-bash-windows/" target="_blank">this MakeUseOf article.</a></p>
+        <p>To check what version of Git Bash you have, type the following into your <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089" target="_blank">Command Prompt</a>:</p>
+        <code>git --version</code>
+        <p>It should come up with something like this: <span class="code">git version 2.35.1.windows.2</span>.</p>
+        <p class="note"><b>NOTE:</b> It might not be this exact output, though it should still start with <span class="code">git version</span>.</p>
+        <p>If it doesn't, you may need to check your work. <a href="https://www.makeuseof.com/install-git-git-bash-windows/" target="_blank">Go back to the link</a> and do so - then try again.</p>
+        <p>Once that's all cleared up, give yourself some praise! You've successfully downloaded Git Bash, and you're ready to start your journey.</p>
       </section>
 
       <section class="main-section" id="navigating_file_system" aria-labelledby="fs-navigation" role="region">
