@@ -20,8 +20,8 @@
         <header id="git-intro">Introduction to Git</header>
         <p>Git is a popular <b>version control system (VCS)</b>. A VCS is a software designed to record changes within one or more files over time. Git also allows users to undo - or even cancel - the made or pending changes in one or more files.</p>
         <p>You might be wondering, <i>what does this mean? Why does this matter to me?</i></p>
-        <p>Well, by using a VCS (<a href="https://en.wikipedia.org/wiki/List_of_version-control_software" target="_blank">in this case</a>, Git), you can track your projects. Say you were working on a webpage, and you deleted the main contents of the page. You would then lose the main file in your project, as well as hours of work. &#128552;</p>
-        <p>But, if you used Git to track these files - and changes made to said files - you could revert the changes. &#129321;</p>
+        <p>Well, by using a VCS (<a href="https://en.wikipedia.org/wiki/List_of_version-control_software" target="_blank">in this case</a>, Git), you can track your projects. Say you were working on a webpage, and you deleted the main contents of the page. You would then lose the main file in your project, as well as hours of work.</p>
+        <p>But, if you used Git to track these files - and changes made to said files - you could revert the changes.</p>
         <h3>Installing Git Bash</h3>
         <p>The first (and most important) thing to do is download Git Bash. This is the application we'll use to run Git.</p>
         <p>You can set up Git Bash on your <b>local machine (aka laptop or computer)</b> using <a href="https://www.makeuseof.com/install-git-git-bash-windows/" target="_blank">this MakeUseOf article.</a></p>
@@ -35,7 +35,20 @@
 
       <section class="main-section" id="navigating_file_system" aria-labelledby="fs-navigation" role="region">
         <header id="fs-navigation">Navigating the file system</header>
-        <!-- https://firebreather65.hashnode.dev/navigating-the-file-system -->
+        <p>Now that you've downloaded Git Bash, you can start navigating (and later changing) the file system.</p>
+        <p class="note"><b>NOTE:</b> All references in this article are to <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/1200px-Binary_tree_structure.svg.png" target="_blank">this binary tree image</a>.</p>
+        <h3>cd</h3>
+        <p>Let's start with <span class="code">cd</span>. Use this command to go "up" or "down" to a particular <b>directory (aka folder)</b>.</p>
+        <p>Let's say that you're in the directory <span class="code">Encyclopaedia</span>, which, in this case, is the <b>root directory (aka top-level folder)</b>. You want to go from <span class="code">Encyclopaedia</span> "down" into the <span class="code">Science</span> sub-directory.</p>
+        <p>To do that, you would use the following:</p>
+        <code>cd &lt;directory-name&gt;</code>
+        <p>in this case, replacing &lt;directory-name&gt; with <span class="code">Science</span>.</p>
+        <div class="note-block">
+          <p class="note"><b>NOTE:</b> You <i>must</i> be on the same path as your desired directory. For example, if you tried to go from where you are now (<span class="code">Science</span>) into the <span class="code">Culture</span> directory, it would result in this error:</p>
+          <code>bash: cd: Culture: No such file or directory.</code>
+          <p>This happens because there isn't a file (or directory) named <span class="code">Culture</span> on the path you're on.</p>
+        </div>
+        
       </section>
 
       <section class="main-section" id="changing_file_system" aria-labelledby="fs-changing" role="region">
