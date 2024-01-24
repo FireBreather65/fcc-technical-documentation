@@ -28,7 +28,7 @@ button {
 }
 
 code {
-	/* add more styles! make it look good :) */
+	/* style like figma file! */
 	font-family: "Roboto Mono", monospace;
 }
 
@@ -37,7 +37,7 @@ a {
 }
 
 .code {
-	/* make this look similar to code blocks! */
+	/* style similar to code blocks */
 	font-family: "Roboto Mono", monospace;
 }
 
@@ -47,18 +47,13 @@ a {
 }
 
 .main-section header {
-	/* style headers like h1s! */
+	/* style headers like h2s! */
 	font-family: "Inter", sans-serif; /* placeholder, remove once designed */
 }
 
 ::selection {
 	background: var(--primary-yellow, #f4b400);
 	color: var(--primary-black, #17171d);
-}
-
-.note-block {
-	/* for lines 46 - 50 */
-	font-family: "Inter", sans-serif; /* placeholder, remove once designed */
 }
 
 /*
