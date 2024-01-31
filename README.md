@@ -1,3 +1,4 @@
+<!--
 # Technical Documentation 📄
 [demo image or video]
 
@@ -17,3 +18,4 @@ This is my submission for freeCodeCamp's [Technical Documentation certification 
 ## What I learned
 
 ## Future plans
+-->
