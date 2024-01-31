@@ -36,6 +36,56 @@
 
       <section class="main-section" id="navigating_file_system" aria-labelledby="fs-navigation" role="region">
         <header id="fs-navigation">Navigating the file system</header>
+        <p>Now that you've downloaded Git Bash, you can start navigating (and later changing) the file system. Below are some basic commands to help you navigate the file system.</p>
+        <p class="note"><b>NOTE:</b> Throughout this section, I'll be referencing <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/1200px-Binary_tree_structure.svg.png">this binary tree image</a> from <a href="https://en.wikipedia.org/wiki/Tree_structure">this Wikipedia article</a>.</p>
+        <!-- cd section -->
+        <h3>cd</h3>
+        <p>Let's start with <span class="code">cd</span>. Use this command to go "up" or "down" to a particular <b>directory (aka folder)</b>.</p>
+        <p>Let's say that you're in the directory <span class="code">Encyclopaedia</span>, which, in this case, is the root directory. <a href="#root-directory-definition" class="numeral-reference">[1]</a>
+        <p>You want to go from <span class="code">Encyclopaedia</span> "down" into the <span class="code">Science</span> directory. To do that (for this and any other directories), use:</p>
+        <code>cd {directory-name}</code>
+        <p>in this case, replacing <span class="code">{directory-name}</span> with <span class="code">Science</span>.</p>
+        <p class="note"><b>NOTE:</b> You <i>must</i> be on the same path<a href="#path-definition" class="numeral-reference">[2]</a> as your desired directory. For example, if you tried to go from where you are now (<span class="code">Science</span>) into the <span class="code">Culture</span> directory, it would result in this error: <span class="code">bash: cd: Culture: No such file or directory</span>. This happens because there isn't a file (or directory) named <span class="code">Culture</span> on the path you're on.</p>
+        <p>You might notice that <span class="code">Science</span> and <span class="code">Culture</span> are on different paths. So, to get to the <span class="code">Culture</span> directory, you'd have to go "up" the directory tree.</p>
+        <b>PERFECT TIME TO LEARN HOW TO! &#128513;</b>
+        <p>To go "up" once the directory tree, use the following:</p>
+        <code>cd ..</code>
+        <p>Let's say you used it, and are now in the <span class="code">Encyclopaedia</span> directory. Voila!</p>
+        <p class="note"><b>NOTE #1:</b> To go up more than once, add a forward slash (<span class="code">/</span>) and two more periods for each level you'd like to go up.</p>
+        <p class="note"><b>NOTE #2:</b> When going "up" the directory tree, you do not have to be on the same path as your desired directory. It works anywhere, anytime, no matter what.</p>
+        <p>You're almost done! There are a couple more tips to learn.</p>
+        <p>Now, I'll teach you how to move "down" your directory tree, <i>more than once</i>.</p>
+        <b><i>Remember the note about being on the same path as where you'd like to go!</i></b>
+        <p>After that last command (<span class="code">cd ..</span>), you're in the directory <span class="code">Encyclopaedia</span>. You'd like to go down to the <span class="code">Craft</span> directory.</p>
+        <p>To do that, try this:</p>
+        <code>cd {directory-name}/{directory-name}/{directory-name}...</code>
+        <p>again replacing {directory-name} with the actual path. In this case, you'd replace it with <span class="code">cd Culture/Craft/</span>.</p>
+        <p>Lastly, know that you can use <span class="code">cd</span> by itself. Doing so takes you to your root directory, as I explained earlier.</p>
+        <!-- pwd section -->
+        <h3>pwd</h3>
+        <p>Now that you know how to use <span class="code">cd</span>, let's move on to <span class="code">pwd</span>. Use this to print your current working directory (aka where you are in your folder tree) to the terminal. <a href="#terminal-definition" class="numeral-reference">[3]</a></p>
+        <p><span class="code">pwd</span> is helpful if you aren't sure what path you are on, or to verify where you are in the tree.</p>
+
+        <!-- ls section -->
+        <h3>ls</h3>
+        <p>The last basic command to know how to use is <span class="code">ls</span>. This command lists the contents of your current directory.</p>
+        <p>Say you used <span class="code">cd</span> to go back to your root directory (<span class="code">Encyclopaedia</span>). If you entered <span class="code">ls</span> there, it would show up like this:</p>
+        <code>Science/  Culture/</code>
+        <p>Using the same logic, if you first typed <span class="code">cd Culture</span>, then typed <span class="code">ls</span>, it would show up like this:</p>
+        <code>Art/  Craft/</code>
+        <p>What if you changed into the <span class="code">Science</span> directory instead?</p>
+        <p>In that case (and all other cases with empty directories), nothing would show up. It's empty.</p>
+        <p class="note"><b>NOTE:</b>  All logic that applies to <span class="code">cd</span> applies to <span class="code">ls</span>. There's only one difference: <span class="code">ls</span> only <i>lists</i> the directories, whereas <span class="code">cd</span> actually <i>moves</i> you around the directory tree.</p>
+        </p>
+        
+        <!-- ref section -->
+        <h3>References</h3>
+        <p id="root-directory-definition">1. "<b>root directory</b>" refers to the top-level directory in a file system. All other directories - such as Science, Culture, Art, and Craft (in this case) - branch off of the root directory. They're called subdirectories.</p>
+        <!-- give special markings/class -->
+        
+        <p id="path-definition">2. A path defines the location of a file or directory in relation to the file system. In the example above, the path from the root directory to the <span class="code">Science</span> directory is (<span class="code">/Encyclopaedia/Science/</span>). The path from the root directory to the <span class="code">Culture</span> directory is (<span class="code">/Encyclopaedia/Culture/</span>).</p>
+
+        <p id="terminal-definition">3. A <b>terminal</b> is a text-based interface, used for typing commands and interacting with your local machine. Git Bash is an example of a terminal.</p>
       </section>
 
       <section class="main-section" id="changing_file_system" aria-labelledby="fs-changing" role="region">
